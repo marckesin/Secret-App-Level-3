@@ -1,0 +1,33 @@
+{
+  "name": "secret-app---level-3",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "^4.3.2",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "md5": "^2.3.0",
+    "mongoose": "^5.13.5",
+    "morgan": "~1.9.1"
+  },
+  "main": "app.js",
+  "author": "Ronaldo",
+  "license": "ISC",
+  "keywords": [
+    "node",
+    "express",
+    "md5",
+    "hash",
+    "mongodb"
+  ],
+  "description": "App de autenticação utilizando hash MD5 128-bit para codificação de senhas e armazenamento no banco de dados."
+}

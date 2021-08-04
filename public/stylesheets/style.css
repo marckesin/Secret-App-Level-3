@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+hr{
+  color:lightgrey;
+}
+
+.fa-icon{
+  color: #fff;
+}
+
+.form-control{
+  background-color: #fff;
+}
+
+.hash{
+  transition: transform .3s;
+}
+
+.hash:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.registrar{
+  margin: 7rem 20rem 0;
+  padding: 1rem;
+}
+
+@media(max-width: 576px) {
+  .hash p{
+    font-size: 1.2rem;
+  }
+
+  .registrar{
+    margin: 4rem 4rem 0;
+    padding: 1rem;
+  }
+
+}
