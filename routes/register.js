@@ -4,7 +4,7 @@ const router = express.Router();
 const User = require('../models/user.model');
 
 router.get('/', (req, res) => {
-  res.render('register');
+  res.render('register', { info: "" });
 });
 
 router.post('/', async (req, res, next) => {
@@ -27,7 +27,7 @@ router.post('/', async (req, res, next) => {
         }
       });
     } else {
-      res.redirect('/register');
+      res.render('register', { info: 'Usuário já existe!' });
     }
   });
 });

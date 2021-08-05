@@ -6,6 +6,12 @@ hr{
   color:lightgrey;
 }
 
+input[type=email]:not(:focus):invalid,
+input[type=password]:not(:focus):invalid {
+  color: red;
+  outline-color: red;
+}
+
 .fa-icon{
   color: #fff;
 }
@@ -26,6 +32,13 @@ hr{
 .registrar{
   margin: 7rem 20rem 0;
   padding: 1rem;
+}
+
+@media(max-width: 850px) {
+  .registrar{
+    margin: 7rem 8rem 0;
+    padding: 1rem;
+  }
 }
 
 @media(max-width: 576px) {
