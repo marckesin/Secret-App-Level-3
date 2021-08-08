@@ -12,6 +12,11 @@ input[type=password]:not(:focus):invalid {
   outline-color: red;
 }
 
+input[type=email]:valid,
+input[type=password]:valid {
+  background-color: #d2f8d2;
+}
+
 .fa-icon{
   color: #fff;
 }
@@ -47,7 +52,7 @@ input[type=password]:not(:focus):invalid {
   }
 
   .registrar{
-    margin: 4rem 4rem 0;
+    margin: 4rem 2rem 0;
     padding: 1rem;
   }
 
