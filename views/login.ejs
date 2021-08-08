@@ -11,7 +11,17 @@
                             required autofocus>
                     </section>
                     <section class="mb-3">
-                        <label for="inputPass" class="form-label text-white">Password</label>
+                        <div class="d-flex justify-content-between">
+                            <label for="inputPass" class="form-label">Password</label>
+                            <div class="d-flex">
+                                <% if (info) { %>
+                                    <span class="material-icons text-danger">error_outline</span>
+                                    <p class="text-danger ms-1 m-0">
+                                        <%= info %>
+                                            <% } %>
+                                    </p>
+                            </div>
+                        </div>
                         <input type="password" class="form-control" id="inputPass" name="password" minlength="4"
                             autocomplete="current-password" required>
                     </section>
